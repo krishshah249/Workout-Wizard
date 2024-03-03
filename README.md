@@ -60,28 +60,27 @@ The dataset originally contains around 1.1 million frames worth of data (~800 mi
 
 #### The input shape is of (36,). These denote the X and Y coordinates of the below 18 keypoints:  
 ```
-        0: 'Nose', 
-        1: 'Neck', 
-        2: 'Right Shoulder', 
-        3: 'Right Elbow', 
-        4: 'Right Wrist',
-        5: 'Left Shoulder',
-        6: 'Left Elbow',
-        7: 'Left Wrist',
-        8: 'Right Hip',
-        9: 'Right Knee',
-        10: 'Right Ankle',
-        11: 'Left Hip', 
-        12: 'Left Knee',
-        13: 'Left Ankle',
-        14: 'Right Eye',
-        15: 'Left Eye',
-        16: 'Right Ear',
-        17: 'Left Ear'
+ 0: 'Nose', 
+ 1: 'Neck', 
+ 2: 'Right Shoulder', 
+ 3: 'Right Elbow', 
+ 4: 'Right Wrist',
+ 5: 'Left Shoulder',
+ 6: 'Left Elbow',
+ 7: 'Left Wrist',
+ 8: 'Right Hip',
+ 9: 'Right Knee',
+ 10: 'Right Ankle',
+ 11: 'Left Hip', 
+ 12: 'Left Knee',
+ 13: 'Left Ankle',
+ 14: 'Right Eye',
+ 15: 'Left Eye',
+ 16: 'Right Ear'
 ```
 #### The output provides the probability of the input falling under one of the 10 classes:  
 ```
-{'squats': 0,
+ 'squats': 0,
  'lunges': 1,
  'bicep_curls': 2,
  'situps': 3,
@@ -90,7 +89,7 @@ The dataset originally contains around 1.1 million frames worth of data (~800 mi
  'dumbbell_rows': 6,
  'jumping_jacks': 7,
  'dumbbell_shoulder_press': 8,
- 'lateral_shoulder_raises': 9}
+ 'lateral_shoulder_raises': 9
 ```
 
 #### A sequential model with 2 hidden layes and a dropout of 0.5 is used to prevent overfitting. Below is a Keras model summary: 
