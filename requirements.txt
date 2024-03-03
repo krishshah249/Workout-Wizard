@@ -1,0 +1,4 @@
+tensorflow
+mediapipe
+numpy
+matplotlib
